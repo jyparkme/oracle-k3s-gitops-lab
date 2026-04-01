@@ -1,10 +1,10 @@
-# 🚀 oracle-k3s-gitops-lab
+# oracle-k3s-gitops-lab
 
 **Oracle Cloud Free Tier** 자원을 극한으로 활용하여 구축한 **Enterprise-grade Cloud Native 인프라 및 데브옵스 파이프라인** 실습 저장소입니다.
 
 ---
 
-## 🎯 프로젝트 목표
+## 프로젝트 목표
 1. **Cost & Resource Optimization**: 24GB RAM 내에서 고부하 미들웨어(Kafka, OpenSearch)와 관측성 도구(PLG Stack)의 공존.
 2. **GitOps Implementation**: ArgoCD를 통한 선언적 인프라 관리 및 자동 배포 체계 구축.
 3. **Full Observability**: Prometheus, Grafana, Loki, Fluent Bit를 활용한 메트릭 및 로그 통합 모니터링.
@@ -12,7 +12,7 @@
 
 ---
 
-## 🏗️ 시스템 아키텍처 (Architecture)
+## 시스템 아키텍처 (Architecture)
 
 ### 1. 하드웨어 리소스 배분 (Oracle Cloud Free Tier)
 | 노드 이름 | 사양 (Shape) | 역할 (Role) | 주요 구성 요소 |
@@ -53,7 +53,7 @@ graph TD
 
 -----
 
-## 🛠️ 기술 스택 (Tech Stack)
+## 기술 스택 (Tech Stack)
 
 ### Infrastructure & Orchestration
 
@@ -81,7 +81,7 @@ graph TD
 
 -----
 
-## 📝 학습 및 트러블슈팅 기록
+## 학습 및 트러블슈팅 기록
 
 프로젝트 진행 중 발생한 주요 이슈와 해결 과정을 아래 링크에 기록합니다. (업데이트 예정)
 
@@ -91,7 +91,7 @@ graph TD
 
 -----
 
-## ⚡ 시작하기 (Quick Start)
+## 시작하기 (Quick Start)
 
 1.  **Prerequisites**: OCI 계정 생성 및 SSH 키 등록.
 2.  **Infrastructure**: `scripts/install-k3s.sh` 실행 (마스터 및 워커 노드 구성).
@@ -100,6 +100,6 @@ graph TD
 
 -----
 
-## 📜 라이선스 (License)
+## 라이선스 (License)
 
 본 프로젝트는 **Apache License 2.0** 및 관련 오픈소스 라이선스를 준수합니다. 기업 환경에서의 자유로운 사용과 배포를 지향합니다.
