@@ -19,7 +19,7 @@
 | :--- | :--- | :--- | :--- |
 | **Master Node** | ARM (2 OCPUs, 12GB) | Control Plane & Ops | K3s Server, ArgoCD, Prometheus, Grafana |
 | **Worker Node 1** | ARM (2 OCPUs, 12GB) | Data Pipeline | Kafka, Zookeeper, OpenSearch, Loki |
-| **Edge Node** | AMD (1/8 OCPU, 1GB) | Frontend & Gateway | Nginx (Vue.js), Nginx Proxy Manager |
+| **Edge Node** | AMD (1/8 OCPU, 1GB) | Frontend & Gateway | Nginx (Vue.js 빌드본), Nginx Proxy Manager |
 | **Admin Node** | AMD (1/8 OCPU, 1GB) | Management | Bastion Host, Uptime Kuma |
 
 ### 2. 서비스 흐름도 (Service Flow)
@@ -66,7 +66,7 @@ graph TD
 
   * **Messaging**: Apache Kafka & Zookeeper
   * **Search Engine**: **OpenSearch** (Apache 2.0 License)
-  * **Caching**: **Valkey** (Redis Alternative)
+  * **Caching**: **Valkey** (Redis Open Source Alternative)
   * **Database**: Oracle Autonomous MySQL / MariaDB
 
 ### Observability (The PLG Stack)
@@ -103,5 +103,3 @@ graph TD
 ## 📜 라이선스 (License)
 
 본 프로젝트는 **Apache License 2.0** 및 관련 오픈소스 라이선스를 준수합니다. 기업 환경에서의 자유로운 사용과 배포를 지향합니다.
-
-``` 
